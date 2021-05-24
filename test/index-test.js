@@ -25,7 +25,6 @@ describe('Bands Component', () => {
         { id: 3, text: 'Cool Runnings' }
       ]
     });
-
     const wrapper = mount(<Provider store={store}><App /></Provider>)
     expect(wrapper.find('li')).to.have.length(3);
   });
